@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="content" method="upgrade" version="5.0">
+    <name>Gastese un tintico ooome</name>
+    <author>David Toro Triana</author>
+    <creationDate>2025</creationDate>
+    <version>0.0.1</version>
+    <description>Automatically appends a the Buy me a Coffee Crowdfounding Platform at the end of Joomla articles.</description>
+    <files>
+        <filename plugin="tintico">tintico.php</filename>
+        <filename>index.html</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="custom_code" type="textarea" label="Custom Code" description="Insert your HTML + JavaScript code here." rows="15" filter="raw"/>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
