@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="plugin" group="content" method="upgrade" version="5.0">
-    <name>Gastese un tintico ooome</name>
+    <name>tintico</name>
     <author>David Toro Triana</author>
     <creationDate>2025</creationDate>
     <version>0.0.1</version>
-    <description>Automatically appends a the Buy me a Coffee Crowdfounding Platform at the end of Joomla articles.</description>
+    <description>Automatically appends the "Buy me a Coffee" Crowdfounding Platform button at the end of Joomla articles.</description>
     <files>
         <filename plugin="tintico">tintico.php</filename>
         <filename>index.html</filename>
