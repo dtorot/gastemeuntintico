@@ -1,2 +1,2 @@
 # gastemeuntintico
-Joomla plugin integration to the 'Buy me a Coffee' crowdfounding platform
+Joomla plugin integration of the 'Buy me a Coffee' crowdfounding platform
