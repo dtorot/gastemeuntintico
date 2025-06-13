@@ -15,6 +15,19 @@ class PlgContentTintico extends CMSPlugin
             return;
         }
 
+        // Check if article has a category ID
+        if (empty($article->catid)) {
+            return;
+        }        
+
+        // Get allowed categories from plugin params
+        $allowedCategories = (array) $this->params->get('categories', []);
+
+        // If current article category not in allowed list, skip
+        if (!in_array($article->catid, $allowedCategories)) {
+            return;
+        }
+        
         // Get the custom HTML + JS from the plugin parameters
         $customCode = $this->params->get('custom_code', '');
 
