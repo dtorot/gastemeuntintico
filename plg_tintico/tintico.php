@@ -11,9 +11,9 @@ class PlgContentTintico extends CMSPlugin
     public function onContentPrepare($context, &$article, &$params, $limit)
     {
         // Only apply to articles
-        if ($context !== 'com_content.article') {
+        /*if ($context !== 'com_content.article') {
             return;
-        }
+    }*/
 
         // Check if article has a category ID
         if (empty($article->catid)) {
